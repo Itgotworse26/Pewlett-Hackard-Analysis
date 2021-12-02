@@ -20,7 +20,7 @@ According to the retiring_titles query, the breakdown of the “silver tsunami�
 The role most affected by the “silver tsunami” is the senior engineer. The role with the least amount of potential retirees is the manager.
 
 
-Meanwhile, the the breakdown of employees eligible for mentorship according to the mentorship_titles query are as follows:
+Meanwhile, the breakdown of employees eligible for mentorship according to the mentorship_titles query are as follows:
 
 * 568 senior staff  
 * 501 engineers    
@@ -31,5 +31,12 @@ Meanwhile, the the breakdown of employees eligible for mentorship according to t
 
 The role with the most amount of eligible mentees is senior staff. The role with the least amount of eligible mentees is the technique leader.
 
+
+A query to order the employees table by birthdate in descending order found that these are the 10 youngest employees:
+
+![Top 10 Youngest Employees](https://github.com/Itgotworse26/Pewlett-Hackard-Analysis/blob/main/Data/Ten_Youngest_Employees.PNG)
+
 ## Summary
-Just from looking at this breakdown, a one-on-one mentorship program would be impratical due to the massive size gap between retiring staff and employees eligible for mentorship. Just by looking at the role of senior engineer; there are only 169 eligible senior engineers who would have to replace 29414 senior engineers.   
+Just from looking at this breakdown, a one-on-one mentorship program would be impratical due to the massive size gap between retiring staff and employees eligible for mentorship. Just by looking at the role of senior engineer; there are only 169 eligible senior engineers who would have to replace 29414 senior engineers. 
+
+The reason for this gap is simply because the employees of Pewlett-Hackard trend towards older; a cursory search of the employees database by birthdate 
