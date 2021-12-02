@@ -17,6 +17,9 @@ According to the retiring_titles query, the breakdown of the “silver tsunami�
 * 1761 assistant engineers     
 * 2 managers    
 
+The role most affected by the “silver tsunami” is the senior engineer. The role with the least amount of potential retirees is the manager.
+
+
 Meanwhile, the the breakdown of employees eligible for mentorship according to the mentorship_titles query are as follows:
 
 * 568 senior staff  
@@ -26,5 +29,7 @@ Meanwhile, the the breakdown of employees eligible for mentorship according to t
 * 78 assistant engineers
 * 77 technique leaders    
 
+The role with the most amount of eligible mentees is senior staff. The role with the least amount of eligible mentees is the technique leader.
+
 ## Summary
-Just from looking at this breakdown, a one-on-one mentorship program would be impratical due to the massive size gap between retiring staff and employees eligible for mentorship. 
+Just from looking at this breakdown, a one-on-one mentorship program would be impratical due to the massive size gap between retiring staff and employees eligible for mentorship. Just by looking at the role of senior engineer; there are only 169 eligible senior engineers who would have to replace 29414 senior engineers.   

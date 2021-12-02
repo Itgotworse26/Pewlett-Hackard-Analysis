@@ -98,7 +98,7 @@ ORDER BY e.emp_no;
 SELECT * FROM mentorship_eligibilty
 
 
--- Extra: Write a query to retrieve the number of employees by their most recent job title who are eligible for mentorship 
+-- Extra 1: Write a query to retrieve the number of employees by their most recent job title who are eligible for mentorship 
 
 SELECT COUNT(me.title) as count, title
 INTO mentorship_titles
@@ -106,4 +106,9 @@ FROM mentorship_eligibilty as me
 GROUP BY title
 ORDER BY count DESC;
 
+-- Check mentorship_eligibilty to confirm Extra 1
 SELECT * FROM mentorship_titles
+
+-- Extra 2: Write a query to order the employee table by birthdate. 
+SELECT * FROM employees
+ORDER BY birth_date DESC;
