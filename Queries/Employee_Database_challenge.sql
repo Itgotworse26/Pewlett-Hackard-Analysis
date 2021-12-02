@@ -21,9 +21,12 @@ ON (e.emp_no = t.emp_no)
 WHERE e.birth_date BETWEEN '1952-01-01' AND '1955-12-31'
 ORDER BY e.emp_no;
 
+-- Check retirement_titles to confirm Step 7
+SELECT * FROM retirement_titles
+
 -- 8. Copy the query from the Employee_Challenge_starter_code.sql and add it to your Employee_Database_challenge.sql file.
 -- 9. Retrieve the employee number, first and last name, and title columns from the Retirement Titles table.
---  a. These columns will be in the new table that will hold the most recent title of each employee.
+---  a. These columns will be in the new table that will hold the most recent title of each employee.
 -- 10. Use the DISTINCT ON statement to retrieve the first occurrence of the employee number for each set of rows defined by the ON () clause.
 -- 11. Create a Unique Titles table using the INTO clause.
 -- 12. Sort the Unique Titles table in ascending order by the employee number and descending order by the last date (i.e., to_date) of the most recent title.
@@ -39,6 +42,10 @@ INTO unique_titles
 FROM retirement_titles as rt
 ORDER BY emp_no, to_date DESC;
 
+-- Check unique_titles to confirm Step 14
+SELECT * FROM unique_titles
+
+
 -- 15. Write another query in the Employee_Database_challenge.sql file to retrieve the number of employees by their most recent job title who are about to retire.
 -- 16. First, retrieve the number of titles from the Unique Titles table.
 -- 17. Then, create a Retiring Titles table to hold the required information.
@@ -51,6 +58,10 @@ INTO retiring_titles
 FROM unique_titles as ut
 GROUP BY title
 ORDER BY count DESC;
+
+-- Check retiring_titles to confirm Step 29
+SELECT * FROM retiring_titles
+
 
 -- Part 2
 
@@ -83,3 +94,16 @@ WHERE (de.to_date = '9999-01-01') AND
 	  (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
 
+-- Check mentorship_eligibilty to confirm Step 11
+SELECT * FROM mentorship_eligibilty
+
+
+-- Extra: Write a query to retrieve the number of employees by their most recent job title who are eligible for mentorship 
+
+SELECT COUNT(me.title) as count, title
+INTO mentorship_titles
+FROM mentorship_eligibilty as me
+GROUP BY title
+ORDER BY count DESC;
+
+SELECT * FROM mentorship_titles
