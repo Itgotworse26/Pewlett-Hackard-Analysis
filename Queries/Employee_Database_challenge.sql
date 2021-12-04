@@ -77,7 +77,8 @@ SELECT * FROM retiring_titles
 -- 10. Export the Mentorship Eligibility table as mentorship_eligibilty.csv and save it to your Data folder in the Pewlett-Hackard-Analysis folder.
 -- 11. Before you export your table, confirm that it looks like the image on the module instructions:
 
-SELECT DISTINCT ON (e.emp_no) e.emp_no, 
+SELECT DISTINCT ON (e.emp_no) 
+    e.emp_no, 
     e.first_name,
     e.last_name,
     e.birth_date,
@@ -98,7 +99,7 @@ ORDER BY e.emp_no;
 SELECT * FROM mentorship_eligibilty
 
 
--- Extra 1: Write a query to retrieve the number of employees by their most recent job title who are eligible for mentorship 
+-- Extra Query 1: Write a query to retrieve the number of employees by their most recent job title who are eligible for mentorship 
 
 SELECT COUNT(me.title) as count, title
 INTO mentorship_titles
@@ -106,9 +107,12 @@ FROM mentorship_eligibilty as me
 GROUP BY title
 ORDER BY count DESC;
 
--- Check mentorship_eligibilty to confirm Extra 1
+-- Check mentorship_titles to confirm Extra 1
 SELECT * FROM mentorship_titles
 
--- Extra 2: Write a query to order the employee table by birthdate. 
+
+-- Extra Query 2: Write a query to order the employee table by birthdate and find the 10 youngest employees. 
+
 SELECT * FROM employees
-ORDER BY birth_date DESC;
+ORDER BY birth_date DESC
+LIMIT 10;
