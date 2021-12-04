@@ -3,12 +3,15 @@ Practice and Challenge Assignment for Module 7
 
 Now that Bobby has proven his SQL chops, his manager has given both of you two more assignments: determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. Then, you’ll write a report that summarizes your analysis and helps prepare Bobby’s manager for the “silver tsunami” as many current employees reach retirement age.
 
+
 ## Overview of the analysis
 The purpose of this analysis is to assess the size of the “silver tsunami”; the bloc of current employees reaching retirement age, and determine the trajectory of a strategy to make sure that the impact of the retirements are not detrimental to Pewlett-Hackard.
+
 
 ## Results
 According to the retiring_titles query, the breakdown of the “silver tsunami” by position are as follows:
 
+### Breakdown
 * 29414 senior engineers    
 * 28254 senior staff    
 * 14222 engineers    
@@ -17,15 +20,17 @@ According to the retiring_titles query, the breakdown of the “silver tsunami�
 * 1761 assistant engineers     
 * 2 managers    
 
-* * The role most affected by the “silver tsunami” is the senior engineer. 
-* * The role with the least amount of potential retirees is the manager. 
-* * Except for the manager role, every position has more than 1000 potential retirees. 
-* * Staff, engineers, senior staff, and senior engineers are positions that are affected with more than 10000 + potential retirees. 
+### Brief Highlights
+* The role most affected by the “silver tsunami” is the senior engineer. 
+* The role with the least amount of potential retirees is the manager. 
+* Except for the manager role, every position has more than 1000 potential retirees. 
+* Staff, engineers, senior staff, and senior engineers are positions that are affected with more than 10000 + potential retirees. 
 
 
 ## Summary
 As a follow-up for additional data, the query of mentorship_titles for a breakdown of employees eligible for mentorship according to shows this breakdown in count of positions of eligible employees:
 
+### Breakdown
 * 568 senior staff  
 * 501 engineers    
 * 169 senior engineers    
@@ -33,11 +38,11 @@ As a follow-up for additional data, the query of mentorship_titles for a breakdo
 * 78 assistant engineers
 * 77 technique leaders    
 
-
-* * The role with the most amount of eligible mentees is senior staff. 
-* * The role with the least amount of eligible mentees is the technique leader. 
-* * There are no managers who are eligible for mentorship.
-* * No position has more than 600 employees eligible for mentorship.
+### Brief Highlights
+* The role with the most amount of eligible mentees is senior staff. 
+* The role with the least amount of eligible mentees is the technique leader. 
+* There are no managers who are eligible for mentorship.
+* No position has more than 600 employees eligible for mentorship.
 
 A query to order the employees table by birthdate in descending order found that these are the 10 youngest employees:
 
