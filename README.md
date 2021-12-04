@@ -24,7 +24,7 @@ According to the retiring_titles query, the breakdown of the â€œsilver tsunamiâ€
 
 
 ## Summary
-As a follow-up for additional data, the query of mentorship_titles for a breakdown of employees eligible for mentorship according to shows this:
+As a follow-up for additional data, the query of mentorship_titles for a breakdown of employees eligible for mentorship according to shows this breakdown in count of positions of eligible employees:
 
 * 568 senior staff  
 * 501 engineers    
@@ -32,6 +32,7 @@ As a follow-up for additional data, the query of mentorship_titles for a breakdo
 * 156 staff    
 * 78 assistant engineers
 * 77 technique leaders    
+
 
 * * The role with the most amount of eligible mentees is senior staff. 
 * * The role with the least amount of eligible mentees is the technique leader. 
