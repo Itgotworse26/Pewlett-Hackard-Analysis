@@ -28,7 +28,7 @@ According to the retiring_titles query, the breakdown of the â€œsilver tsunamiâ€
 
 
 ## Summary
-As a follow-up for additional data, the query of mentorship_titles for a breakdown of employees eligible for mentorship according to shows this breakdown in count of positions of eligible employees:
+As a follow-up for additional data, the query of mentorship_titles for a breakdown of employees eligible for mentorship shows this breakdown in count of positions of eligible employees:
 
 ### Breakdown
 * 568 senior staff  
@@ -50,7 +50,7 @@ A query to order the employees table by birthdate in descending order found that
 
 Just from looking at this breakdown, a one-on-one mentorship program would be impractical due to the massive size gap between retiring staff and employees eligible for mentorship. Just by looking at the role of senior engineer; there are only 169 eligible senior engineers who would have to replace 29414 senior engineers. 
 
-The number of retiring senior engineers, senior staff, and engineemeaningrs represent a massive loss of manpower, to say nothing of the loss in institional, cultural, and practical experience. 
+The number of retiring senior engineers, senior staff, staff, and engineers represent a massive loss of manpower, to say nothing of the loss in institional, cultural, and practical experience. 
 
 The reason for this wave is because the employees of Pewlett-Hackard trend towards older; a cursory search of the employees database by birthdate shows that the youngest employee is born in 1965, meaning that the youngest employee in the company is 56 years old. 
 
